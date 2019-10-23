@@ -40,11 +40,18 @@ Ubuntu下客户端
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191022214157655.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMzY1ODI1,size_16,color_FFFFFF,t_70)
 
--**注意**
+ - **注意**
+ 
 日志库spdlog需要把其文件夹中的include/spdlog 文件夹放到Linux系统/usr/include 目录下
+
 数据库相关函数需要mysql.h头文件，需要Linux系统安装mysql软件
+
 sudo apt-get install mysql-server
+
 sudo apt-get install libmysqlclient-dev[开发包，不安装会提示找不到mysql.h头文件]
+
 我用的数据库名称叫做ChatRoom，若你的mysql中没有这一数据库，会提示连接数据库失败
+
 保存用户信息的表的结构，在上面给出的图片可以看到
+
 服务器IP为腾讯云服务器IP，这样可以保证公网下的用户都能连接上，测试时要修改为你的本地IP，客户端，服务器端都要改
